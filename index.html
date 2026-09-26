@@ -11,13 +11,13 @@
   <p id="message" style="position: fixed; top: 0; left: 0; z-index: 10; background: white; padding: 12px;" hidden></p>
   <!-- MindAR запускает камеру и ищет изображение из targets.mind. -->
   <a-scene
-    mindar-image="imageTargetSrc: ../assets/targets.mind;"
+    mindar-image="imageTargetSrc: targets.mind;"
     color-space="sRGB"
     renderer="colorManagement: true; physicallyCorrectLights: true;"
     vr-mode-ui="enabled: false"
     device-orientation-permission-ui="enabled: false">
     <a-assets>
-      <a-asset-item id="horse" src="../assets/Horse.glb"></a-asset-item>
+      <a-asset-item id="horse" src="Horse.glb"></a-asset-item>
     </a-assets>
     <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
     <a-entity light="type: ambient; intensity: 1"></a-entity>
